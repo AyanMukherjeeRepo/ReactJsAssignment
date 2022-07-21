@@ -1,0 +1,7 @@
+.genres-list {
+    list-style: none;
+    display: flex;
+    grid-gap: 30px;
+    margin: 0;
+    padding: 0;
+}

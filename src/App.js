@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Genre from "./Components/Genre/Genre";
+import Header from "./Components/Header/Header";
 
 function App() {
+  const genres = [
+    { id: 1, value: "ALL" },
+    { id: 2, value: "DOCUMENTARY" },
+    { id: 3, value: "COMEDY" },
+    { id: 4, value: "HORROR" },
+    { id: 5, value: "CRIME" },
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="genre-sort">
+        <Genre genres={genres} />
+      </div>
     </div>
   );
 }
